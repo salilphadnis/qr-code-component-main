@@ -11,6 +11,14 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
     .img-container {
       display: flex;
       flex-direction: column;
@@ -23,7 +31,7 @@
       
       background-color: white;
       max-width: 200px;
-      height: 300px;
+      height: 350px;
       padding: 10px;
       border-radius: 10px;
       
@@ -41,11 +49,6 @@
       background-color: rgb(213, 225, 239);
     }
 
-    .qr-image-title
-    {
-      font-weight: bold;
-    }
-
     .qr-image-description
     {
       font-size: 10px;
@@ -56,19 +59,9 @@
 <body>
 
   <div class="img-container">
-
-    <div>
       <img class="qr-image" src="images/image-qr-code.png">
-    </div>
-
-    <div>
-      <p class="qr-image-title">Improve your front-end skills by building projects</p>
-    </div>  
-    
-    <div>
+      <h3 class="qr-image-title">Improve your front-end skills by building projects</h3>
       <p class="qr-image-description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-
   </div>
 
 
