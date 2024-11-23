@@ -14,18 +14,26 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+
+    :root {
+      --background-color: hsl(212, 45%, 89%);
+      --card-background: hsl(0, 0%, 100%);
+    }
+
     *
     {
       margin: 0;
       padding: 0;
     }
 
+    /* Main body styling */
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: hsl(212, 45%, 89%);
+      background-color: var(--background-color);
       font-family: "Outfit", serif;
       font-size: 15px;
     }
@@ -34,13 +42,23 @@
       width: 360px;
     }
 
+    .qr-container:hover {
+      box-shadow: 0 9px 24px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
     .card img {
       width: 100%;
       border-radius : 15px;
     }
 
+    .card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
     .card {
-      background-color: hsl(0, 0%, 100%);
+      background-color: var(--card-background);
       padding: 18px;
       border-radius: 20px;
       text-align: center;
@@ -60,13 +78,14 @@
       color: hsl(216, 15%, 48%);
     }
 
+
   </style>
 </head>
 <body>
 
-  <div class="qr-container">
+  <section class="qr-container">
     <div class="card">
-      <img src="images/image-qr-code.png">
+      <img src="images/image-qr-code.png" alt="QR Code to visit Frontend Mentor">
       <div class="text">
         <h2>Improve your front-end skills by building projects</h2>
         <p>
@@ -75,7 +94,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
 
 </body>
